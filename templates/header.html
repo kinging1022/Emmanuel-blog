@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Angela's Blog</title>
+  <title>Emmanuel's Blog</title>
 
   <!-- Bootstrap core CSS -->
   <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -45,10 +45,12 @@
           <li class="nav-item">
             <a class="nav-link" href="{{ url_for('register') }}">Register</a>
           </li>
-          {% endif %}
+          {% else %}
+
           <li class="nav-item">
             <a class="nav-link" href="{{ url_for('logout') }}">Log Out</a>
           </li>
+          {% endif %}
     
           <li class="nav-item">
             <a class="nav-link" href="{{ url_for('about') }}">About</a>
